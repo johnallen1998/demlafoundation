@@ -38,8 +38,8 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Contact</h3>
                 <ul className="mt-4 space-y-2 text-gray-600">
-                  <li>info@demlafoundation.org</li>
-                  <li>+1 (555) 123-4567</li>
+                  <li>vineetdemla@gmail.com</li>
+                  <li>Ahmedabad, India</li>
                 </ul>
               </div>
             </div>

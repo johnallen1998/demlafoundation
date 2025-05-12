@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import ContactSection from '@/components/ContactSection';
-import { MapPin, Mail, Phone } from 'lucide-react';
+import { MapPin, Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -37,17 +37,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="text-lg font-medium">Email</h3>
-                        <p className="text-gray-600">info@demlafoundation.org</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start">
-                      <div className="mr-4 bg-demla-muted p-3 rounded-full">
-                        <Phone className="h-5 w-5 text-demla-green-400" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-medium">Phone</h3>
-                        <p className="text-gray-600">+1 (555) 123-4567</p>
+                        <p className="text-gray-600">vineetdemla@gmail.com</p>
                       </div>
                     </div>
                     
@@ -58,9 +48,9 @@ const Contact = () => {
                       <div>
                         <h3 className="text-lg font-medium">Future Office</h3>
                         <p className="text-gray-600">
-                          1234 Compassion Way<br/>
-                          San Francisco, CA 94110<br/>
-                          United States
+                          Ahmedabad<br/>
+                          Gujarat<br/>
+                          India
                         </p>
                       </div>
                     </div>
