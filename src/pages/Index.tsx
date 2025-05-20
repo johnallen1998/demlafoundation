@@ -20,9 +20,13 @@ const Index = () => {
         
         <VisionSection />
         
-        <InitiativesSection />
+        <section id="initiatives">
+          <InitiativesSection />
+        </section>
         
-        <ContactSection />
+        <section id="contact">
+          <ContactSection />
+        </section>
       </main>
       
       <Footer />
