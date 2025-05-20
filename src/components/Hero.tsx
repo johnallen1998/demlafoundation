@@ -6,10 +6,9 @@ import { ArrowRight } from "lucide-react";
 interface HeroProps {
   title: string;
   subtitle?: string;
-  hideInitiativesButton?: boolean;
 }
 
-const Hero: React.FC<HeroProps> = ({ title, subtitle, hideInitiativesButton }) => {
+const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
   return (
     <div className="relative bg-gradient-to-br from-white to-demla-beige py-20 md:py-28 overflow-hidden">
       {/* Enhanced background elements with better animations */}
@@ -43,24 +42,14 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, hideInitiativesButton }) =
             Get Involved <ArrowRight className="ml-1 h-4 w-4" />
           </Button>
           
-          {!hideInitiativesButton && (
-            <Button 
-              variant="outline"
-              size="lg"
-              className="border-demla-green-300 text-demla-green-400 hover:bg-demla-green-100 hover:text-demla-green-500 transition-all"
-              onClick={() => {
-                // Navigate to initiatives page if we're not already there
-                if (!window.location.pathname.includes('/initiatives')) {
-                  window.location.href = '/initiatives';
-                } else {
-                  // If we're on the initiatives page, scroll to the initiatives section
-                  document.getElementById('initiatives')?.scrollIntoView({behavior: 'smooth'});
-                }
-              }}
-            >
-              Our Initiatives
-            </Button>
-          )}
+          <Button 
+            variant="outline"
+            size="lg"
+            className="border-demla-green-300 text-demla-green-400 hover:bg-demla-green-100 hover:text-demla-green-500 transition-all"
+            onClick={() => document.getElementById('initiatives')?.scrollIntoView({behavior: 'smooth'})}
+          >
+            Our Initiatives
+          </Button>
         </div>
       </div>
     </div>
