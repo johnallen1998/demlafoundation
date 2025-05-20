@@ -15,6 +15,7 @@ const Initiatives = () => {
         <Hero 
           title="Our Initiatives" 
           subtitle="Planned projects and programs to create lasting impact" 
+          hideInitiativesButton={true}
         />
         
         <section className="py-16 md:py-24 bg-white">
